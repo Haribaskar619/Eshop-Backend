@@ -46,7 +46,7 @@ app.use('/',router);
 passport.use(new GoogleStrategy({
     clientID: "633340311369-mmosrqsp7ak8e6kaeqdkt18k8i20ik1f.apps.googleusercontent.com",
     clientSecret: "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",
-    callbackURL: process.env.REACT_APP_BASE_URL+"/googleRedirect"
+    callbackURL: "http://localhost:5000/googleRedirect"
   },
   function(accessToken, refreshToken, profile, cb) {
       console.log(accessToken)
